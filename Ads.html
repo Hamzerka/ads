@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Ad List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5F5F5;
+        }
+
+        .blue-bar, .footer {
+            background-color: #0099FF;
+            color: #ffffff;
+            padding: 10px 5%;
+            text-align: left;
+        }
+
+        .tabs-header {
+            display: flex;
+            background-color: #0099FF;
+            color: #ffffff;
+            justify-content: space-between;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+	
+		.ad {
+			display: flex;
+			padding: 10px;
+			background-color: #ffffff;
+			border-bottom: 1px solid #D3D3D3;
+			margin: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			position: relative;  /* This ensures that the child's absolute positioning refers to this container */
+		}
+
+		.ad-price {
+			position: absolute;
+			right: 10px;  /* Adjust as needed for exact positioning */
+			bottom: 10px;  /* Adjust as needed for exact positioning */
+			font-weight: bold;
+		}
+
+
+        .ad img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .ad-title {
+            font-weight: bold;
+            color: #000;
+            margin: 0;
+        }
+
+        .ad-description, .ad-time {
+            color: #808080;
+            margin: 2px 0;
+        }
+
+        .ad-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="blue-bar">
+        Ad List
+    </div>
+
+    <div class="tabs-header">
+        <div class="tab">ALL ADS</div>
+        <div class="tab">MY ADS</div>
+    </div>
+
+    <!-- All Ads Section -->
+    <div class="ads-section">
+        <!-- ... Repeat the .ad sections as per your requirements ... -->
+
+        <div class="ad">
+            <img src="ad.jpg" alt="Ad Image">
+            <div class="ad-details">
+                <div class="ad-title">Ad Title</div>
+                <div class="ad-description">Description</div>
+                <div class="ad-time">1 hour ago</div>
+            </div>
+            <div class="ad-price">$99.99</div>
+        </div>
+
+        <!-- ... -->
+    </div>
+
+    <!-- My Ads Section -->
+    <div class="ads-section">
+        <!-- ... Repeat the .ad sections as per your requirements ... -->
+
+        <div class="ad">
+            <img src="ad.jpg" alt="Ad Image">
+            <div class="ad-details">
+                <div class="ad-title">Ad Title</div>
+                <div class="ad-description">Description</div>
+                <div class="ad-time">1 hour ago</div>
+            </div>
+            <div class="ad-price">$99.99</div>
+        </div>
+
+        <!-- ... -->
+    </div>
+
+    <div class="footer">
+        All rights reserved Hamza Zerkani
+    </div>
+</body>
+</html>
+
